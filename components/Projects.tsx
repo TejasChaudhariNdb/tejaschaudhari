@@ -9,6 +9,7 @@ interface IProjectsProps {
 }
 
 export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
+
   const [activeTag, setActiveTag] = useState<string>("all");
   const [filteredProjects, setFilteredProjects] = useState<IProjects[]>([]);
 

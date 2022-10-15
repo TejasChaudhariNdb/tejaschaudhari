@@ -95,10 +95,10 @@ export const Contact: NextPage<IContactProps> = ({ theme }) => {
 
       try {
         const response = await emailjs.sendForm(
-          process.env.NEXT_PUBLIC_SERVICE_ID!,
-          process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+          "service_es71tdi",
+          "template_q9n4o6f",
           form.current!,
-          process.env.NEXT_PUBLIC_PUBLIC_KEY!
+          "LZzkyVlaROhseyjlD"
         );
 
         if (response.status === 200) {
@@ -117,7 +117,7 @@ export const Contact: NextPage<IContactProps> = ({ theme }) => {
     <>
       <h1 className="contact_heading">Contact Me</h1>
       <div className="contact_email">
-        <img src={Gmail.src} alt="" /> himanshu27kashyap@gmail.com
+        <img src={Gmail.src} alt="" /> tejaschaudhari038@gmail.com
       </div>
       {!loading ? (
         <form className="contact_form" autoComplete="off" ref={form}>

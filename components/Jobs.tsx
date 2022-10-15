@@ -8,6 +8,7 @@ interface IJobsProps {
 }
 
 export const Jobs: NextPage<IJobsProps> = ({ jobs }) => {
+
   return (
     <>
       <h1 className="jobs_heading">Work</h1>

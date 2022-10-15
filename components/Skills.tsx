@@ -7,6 +7,7 @@ interface ISKillsProps {
 }
 
 export const Skills: NextPage<ISKillsProps> = ({ skills }) => {
+
   const languages = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "languages");
   const frontend = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "frontend");
   const uilibraries = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "uilibraries");
