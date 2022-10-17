@@ -106,16 +106,12 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
   return (
     <div>
       <Head>
-        <title>Tejas Chaudhari</title>
-        <meta
-          name="keywords"
-          content="Tejas Chaudhari,Tejas Sanjay Chaudhari,Tejas Developer,Tejas Nandurbar,Nandurbar,Dhule,Tejas Codes, software developer, web developer" />
-        <meta
-          name="description"
-          content="Hey, I'm Tejas Chaudhari a Software Developer from Nandurbar, Maharashtra. Here's my portfolio where you can see all my projects, blogs, and achievements."
-        />
+
+
         <meta name="author" content="Tejas Chaudhari" />
         <link rel="icon" href="/favicon.ico" />
+
+
       </Head>
 
       <main data-theme={theme}>
