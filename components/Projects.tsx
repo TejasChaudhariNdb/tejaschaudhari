@@ -94,14 +94,14 @@ export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
                 <img
                   src={Github.src}
                   alt=""
-                  onClick={() => window.open(project?.githubLink, "_blank")}
+                  // onClick={() => window.open(project?.githubLink, "_blank")}
                   className={`${project?.demoLink && "margin-right"}`}
                 />
                 {project?.demoLink && (
                   <img
                     src={Web.src}
                     alt=""
-                    onClick={() => window.open(project?.demoLink, "_blank")}
+                    // onClick={() => window.open(project?.demoLink, "_blank")}
                   />
                 )}
               </div>
