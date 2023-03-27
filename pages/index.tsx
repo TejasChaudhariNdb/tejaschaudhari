@@ -178,7 +178,7 @@ const jobs: any[] = [
     "companyLinkedin": "https://www.linkedin.com/company/neardish/",
     "companyUrl": "https://neardish.in/",
     "from": "2020-08-1",
-    "to": null,
+     "to": "2021-11-1",
     "logo": {
       "url": "https://media-exp1.licdn.com/dms/image/C560BAQEFetL4Lk6Dzw/company-logo_100_100/0/1610867285021?e=1674086400&v=beta&t=KaunjQIG6NyKkgHMT1M_WaJHReE5q2Aat0jtdIWvDbc"
     }
@@ -189,8 +189,8 @@ const jobs: any[] = [
     "designation": "Software Engineer (Freelancing)",
     "companyLinkedin": "https://www.linkedin.com/company/aetherearth/",
     "companyUrl": "https://aeth.ca/",
-    "from": "2020-07-1",
-    "to": "2021-07-1",
+    "from": "2019-06-1",
+    "to": "2020-06-1",
     "logo": {
       "url": "https://media-exp1.licdn.com/dms/image/C560BAQE9sbcqTuyv5A/company-logo_200_200/0/1610503186023?e=1674086400&v=beta&t=uz8GmfZ6UjsOL8JC0SP_CrPKY_EXE2rVZfTRAEJjE5M"
     }
@@ -201,23 +201,13 @@ const jobs: any[] = [
     "designation": "Web Developer",
     "companyLinkedin": "https://www.linkedin.com/company/bracketsinfinity/",
     "companyUrl": "https://www.bracketsinfinity.com/",
-    "from": "2019-03-03",
-    "to": "2021-05-18",
+    "from": "2017-03-03",
+    "to": "2019-06-18",
     "logo": {
       "url": "https://media-exp1.licdn.com/dms/image/C4D0BAQHkYEAEmWtYaw/company-logo_200_200/0/1519878702255?e=1674086400&v=beta&t=HYgWmMxl7Z2YG85LRb6u0JorbBi2W6hiS4mCjWcHtjo"
     }
   },
-  {
-    "id": "cl7gj1ovg67tw0bppb3t3ox70",
-    "company": "KiranaZone",
-    "designation": "Software Engineer",
-    "companyLinkedin": "https://www.linkedin.com/company/kiranazone/",
-    "companyUrl": "https://www.kiranazone.com/",
-    "from": "2017-01-08",
-    "to": "2019-12-08",
-    "logo": {
-      "url": "https://media-exp1.licdn.com/dms/image/C510BAQFssIrg4LIspw/company-logo_100_100/0/1532838951664?e=1674086400&v=beta&t=Po7Rw31aXXPKNBq8OAGf7CgHyN7IxjfGCM5UpKXzm0s"
-    }
+
   }
 ]
 
