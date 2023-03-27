@@ -18,7 +18,7 @@ export const Jobs: NextPage<IJobsProps> = ({ jobs }) => {
           <div className="job" key={job?.id}>
             <h2>{job?.company}</h2>
             <h3>{job?.designation}</h3>
-            <img src={job?.logo?.url} alt="" className="job_companyLogo" />
+            <img src={job?.logo?.url} alt="logo" className="job_companyLogo" />
             <div className="job_date_beforeLine">
               {`${Months[parseInt(job?.from?.split("-")[1])]}, ${job?.from?.split("-")[0]}`}
             </div>

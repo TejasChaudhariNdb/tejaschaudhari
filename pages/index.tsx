@@ -168,7 +168,7 @@ const jobs: any[] = [
     "from": "2021-11-1",
     "to": null,
     "logo": {
-      "url": "https://media-exp1.licdn.com/dms/image/C560BAQE9sbcqTuyv5A/company-logo_200_200/0/1610503186023?e=1674086400&v=beta&t=uz8GmfZ6UjsOL8JC0SP_CrPKY_EXE2rVZfTRAEJjE5M"
+      "url": "https://play-lh.googleusercontent.com/sEFlwIUv8Y6pYNi62Bs13JR6AMSnYAq2RZSrF4YfeEm1YwrMYuc-u6oc_e1XytQTQ7k"
     }
   },
   {
