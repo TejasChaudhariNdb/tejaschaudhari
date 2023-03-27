@@ -208,7 +208,7 @@ const jobs: any[] = [
     }
   },
 
-  }
+
 ]
 
 const projects: any[] = [
