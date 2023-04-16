@@ -17,22 +17,22 @@ export const About: NextPage = () => {
         <div className="about_left_socialMedia">
           <img
             src={github.src}
-            alt=""
+            alt="tejas"
             onClick={() => window.open("https://github.com/TejasChaudhariNdb", "_blank")}
           />
           <img
             src={linkedin.src}
-            alt=""
+            alt="tejas"
             onClick={() => window.open("https://www.linkedin.com/in/tejaschaudhari038/", "_blank")}
           />
           <img
             src={instagram.src}
-            alt=""
+            alt="tejas"
             onClick={() => window.open("https://www.instagram.com/tejas_s_chaudhari/", "_blank")}
           />
           <img
             src={gmail.src}
-            alt=""
+            alt="tejas"
             onClick={() => window.open("mailto:tejaschaudhari038@gmail.com", "_blank")}
           />
         </div>

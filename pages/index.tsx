@@ -139,7 +139,7 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
 
         <Footer />
 
-        {isVisible && <img src={ScrollUp.src} alt="" className="scroll-up" onClick={scrollToTop} />}
+        {isVisible && <img src={ScrollUp.src} alt="tejas" className="scroll-up" onClick={scrollToTop} />}
 
         <ToastContainer
           position="top-right"

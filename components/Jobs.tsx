@@ -31,10 +31,10 @@ export const Jobs: NextPage<IJobsProps> = ({ jobs }) => {
             <div className="job_companyLinks">
               <img
                 src={linkedin?.src}
-                alt=""
+                alt="tejas"
                 onClick={() => window.open(job?.companyLinkedin, "_blank")}
               />
-              <img src={www?.src} alt="" onClick={() => window.open(job?.companyUrl, "_blank")} />
+              <img src={www?.src} alt="tejas" onClick={() => window.open(job?.companyUrl, "_blank")} />
             </div>
           </div>
         ))}

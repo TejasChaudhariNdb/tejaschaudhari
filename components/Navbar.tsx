@@ -33,7 +33,7 @@ export const Navbar: NextPage<INavbarProps> = ({
 
         <p className="navbar_name">
           <span>Tejas Chaudhari</span>
-          <img src={theme === "light" ? Sun.src : Moon.src} alt="" onClick={switchTheme} />
+          <img src={theme === "light" ? Sun.src : Moon.src} alt="tejas" onClick={switchTheme} />
         </p>
         <div className="navbar_list">
           <p className="navbar_list_item" onClick={() => onNavItemClick("about")}>

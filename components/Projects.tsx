@@ -73,7 +73,7 @@ export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
         <div className="projects_filter_cardsBox">
           {filteredProjects?.map(project => (
             <div key={project?.id} className="projects_filter_cardsBox_card">
-              <img src={project?.image?.url} alt="" className="projects_filter_cardsBox_card_img" />
+              <img src={project?.image?.url} alt="tejas" className="projects_filter_cardsBox_card_img" />
               <p className="projects_filter_cardsBox_card_title">{project?.title}</p>
               <div className="projects_filter_cardsBox_card_techStack">
                 {project?.techStack?.map(stack => {
@@ -93,14 +93,14 @@ export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
               <div className="projects_filter_cardsBox_card_links">
                 <img
                   src={Github.src}
-                  alt=""
+                  alt="tejas"
                   // onClick={() => window.open(project?.githubLink, "_blank")}
                   className={`${project?.demoLink && "margin-right"}`}
                 />
                 {project?.demoLink && (
                   <img
                     src={Web.src}
-                    alt=""
+                    alt="tejas"
                     // onClick={() => window.open(project?.demoLink, "_blank")}
                   />
                 )}
