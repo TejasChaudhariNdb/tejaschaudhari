@@ -12,12 +12,19 @@ export default function Positionsize() {
     // Calculate maximum risk and position size
     const maxRisk = accountBalance * (maxPercentageToLose / 100);
     const riskPerShare = sharePrice - stopLossPrice;
+    console.log(accountBalance/sharePrice)
     const positionSize = Math.floor(maxRisk / riskPerShare);
+    const qytToBuy =  Math.round(Math.min(accountBalance/sharePrice, positionSize))
     // const positionSize = Math.floor(maxRisk  / sharePrice);
 
-    // Update state with calculated values
-    setMaximumRisk(maxRisk.toFixed(2));
-    setPositionSize(positionSize);
+    if(maxRisk > accountBalance) {
+      setMaximumRisk(accountBalance);
+    }else{
+      setMaximumRisk(maxRisk.toFixed(2));
+    }
+
+
+    setPositionSize(qytToBuy);
   }
 
 useEffect(() => {
@@ -69,6 +76,8 @@ useEffect(() => {
           name="max-percentage-to-lose"
           value={maxPercentageToLose}
           onChange={(e) => setMaxPercentageToLose(e.target.value)}
+          max={102}
+          min={0}
         />
 
 
