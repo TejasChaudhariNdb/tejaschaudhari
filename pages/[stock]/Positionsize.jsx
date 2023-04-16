@@ -6,12 +6,14 @@ export default function Positionsize() {
   const [maximumRisk, setMaximumRisk] = useState(0);
   const [positionSize, setPositionSize] = useState(0);
   const [sharePrice, setSharePrice] = useState(110);
+  const [stopLossPrice, setStopLossPrice] = useState(100);
 
   function calculatePositionSize() {
     // Calculate maximum risk and position size
     const maxRisk = accountBalance * (maxPercentageToLose / 100);
-    // const positionSize = Math.floor(maxRisk / riskPerShare);
-    const positionSize = Math.floor(maxRisk  / sharePrice);
+    const riskPerShare = sharePrice - stopLossPrice;
+    const positionSize = Math.floor(maxRisk / riskPerShare);
+    // const positionSize = Math.floor(maxRisk  / sharePrice);
 
     // Update state with calculated values
     setMaximumRisk(maxRisk.toFixed(2));
@@ -32,7 +34,7 @@ useEffect(() => {
 
       <h1>Position Size Calculator</h1>
       <form>
-        <label htmlFor="account-balance">Account Balance:</label>
+        <label htmlFor="account-balance">Capital for this trade</label>
         <input
           type="number"
           id="account-balance"
@@ -40,7 +42,7 @@ useEffect(() => {
           value={accountBalance}
           onChange={(e) => setAccountBalance(e.target.value)}
         />
-    <label htmlFor="share-price">Share Price:</label>
+    <label htmlFor="share-price">Share Buying Price:</label>
       <input
         type="number"
         id="share-price"
@@ -48,7 +50,19 @@ useEffect(() => {
         value={sharePrice}
         onChange={(e) => setSharePrice(e.target.value)}
       />
-        <label htmlFor="max-percentage-to-lose">Maximum Percentage to Lose:</label>
+
+<label htmlFor="max-percentage-to-lose">Stop Loss Price</label>
+        <input
+          type="number"
+          id="max-percentage-to-lose"
+          name="max-percentage-to-lose"
+          value={stopLossPrice}
+          onChange={(e) => setStopLossPrice(e.target.value)}
+        />
+
+
+
+        <label htmlFor="max-percentage-to-lose">Maximum Percentage% to Lose:</label>
         <input
           type="number"
           id="max-percentage-to-lose"
@@ -56,7 +70,6 @@ useEffect(() => {
           value={maxPercentageToLose}
           onChange={(e) => setMaxPercentageToLose(e.target.value)}
         />
-
 
 
         <input type="button" value="Calculate" onClick={calculatePositionSize} />
