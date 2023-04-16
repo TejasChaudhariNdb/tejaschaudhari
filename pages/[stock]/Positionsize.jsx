@@ -1,5 +1,5 @@
 import { useState ,useEffect} from "react";
-
+import Head from 'next/head';
 export default function Positionsize() {
   const [accountBalance, setAccountBalance] = useState(15000);
   const [maxPercentageToLose, setMaxPercentageToLose] = useState(3);
@@ -35,6 +35,26 @@ useEffect(() => {
 
   return (
     <>
+       <Head>
+        <title>Position Size Calculator Nifty & Bank Stocks</title>
+        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+        <meta name="google" content="notranslate" key="notranslate" />
+        <link
+          rel="canonical"
+          href="https://www.tejaschaudhari.com/stock/Positionsize"
+          key="canonical"
+        />
+        <meta
+  name="description"
+  content="Use our Position Size and Risk Calculator to easily calculate the recommended lot size, using live market quotes, account equity, risk percentage and stop ..."
+/>
+
+<meta property="og:title" content="Position Size Calculator Nifty & Bank Stocks" />
+        <meta
+          property="og:description"
+          content="Use our Position Size and Risk Calculator to easily calculate the recommended lot size, using live market quotes, account equity, risk percentage and stop ..."
+        />
+      </Head>
      <div className="Container_cal">
      <div>
 
@@ -113,6 +133,12 @@ useEffect(() => {
       </div>
       </div>
       </div>
+
+
+
+
+
+
       <style jsx>{`
    body {
     font-family: Arial, sans-serif;

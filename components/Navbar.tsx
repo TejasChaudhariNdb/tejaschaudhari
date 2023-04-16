@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import Moon from "../assets/moon.webp";
 import Sun from "../assets/sun.webp";
-
+import Link from "next/link";
 interface INavbarProps {
   onNavItemClick: (item: string) => void;
   switchTheme: () => void;
@@ -51,6 +51,10 @@ export const Navbar: NextPage<INavbarProps> = ({
           <p className="navbar_list_item" onClick={() => onNavItemClick("contact")}>
             Contact
           </p>
+          <Link href="stock/Positionsize" className="navbar_list_item" onClick={() => onNavItemClick("contact")}>
+            Position
+          </Link>
+
         </div>
       </nav>
 
@@ -66,6 +70,9 @@ export const Navbar: NextPage<INavbarProps> = ({
         </p>
         <p className="sidebar_item" onClick={() => onNavItemClick("skills")}>
           Skills
+        </p>
+        <p className="sidebar_item" onClick={() => onNavItemClick("contact")}>
+          Contact
         </p>
         <p className="sidebar_item" onClick={() => onNavItemClick("contact")}>
           Contact
