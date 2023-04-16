@@ -92,11 +92,23 @@ useEffect(() => {
           </span>
         </p>
         <p>
-          Position Size:{" "}
+          Qyt:{" "}
           <span id="position-size" className="shares">
             {positionSize}
           </span>{" "}
           shares
+        </p>
+        <p>
+         Nifty {" "}
+          <span id="position-size" className="shares">
+            {Math.floor(positionSize / 50)}
+          </span>{" "}
+
+         Bank Nifty {" "}
+          <span id="position-size" className="shares">
+            {Math.floor(positionSize / 25)}
+          </span>
+
         </p>
       </div>
       </div>
