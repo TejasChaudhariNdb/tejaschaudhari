@@ -125,13 +125,15 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
           <Jobs jobs={jobs} />
         </section>
 
+        <section className="skills" ref={skillsRef}>
+          <Skills skills={skills} />
+        </section>
+
         <section className="projects" ref={projectsRef}>
           <Projects projects={projects} />
         </section>
 
-        <section className="skills" ref={skillsRef}>
-          <Skills skills={skills} />
-        </section>
+
 
         <section className="contact" ref={contactRef}>
           <Contact theme={theme} />
@@ -180,7 +182,7 @@ const jobs: any[] = [
     "from": "2020-08-1",
      "to": "2021-11-1",
     "logo": {
-      "url": "https://media-exp1.licdn.com/dms/image/C560BAQEFetL4Lk6Dzw/company-logo_100_100/0/1610867285021?e=1674086400&v=beta&t=KaunjQIG6NyKkgHMT1M_WaJHReE5q2Aat0jtdIWvDbc"
+      "url": "./neardish.avif"
     }
   },
   {
@@ -192,7 +194,7 @@ const jobs: any[] = [
     "from": "2019-06-1",
     "to": "2020-06-1",
     "logo": {
-      "url": "https://media-exp1.licdn.com/dms/image/C560BAQE9sbcqTuyv5A/company-logo_200_200/0/1610503186023?e=1674086400&v=beta&t=uz8GmfZ6UjsOL8JC0SP_CrPKY_EXE2rVZfTRAEJjE5M"
+      "url": "./aeth.jfif"
     }
   },
   {
@@ -204,10 +206,21 @@ const jobs: any[] = [
     "from": "2017-03-03",
     "to": "2019-06-18",
     "logo": {
-      "url": "https://media-exp1.licdn.com/dms/image/C4D0BAQHkYEAEmWtYaw/company-logo_200_200/0/1519878702255?e=1674086400&v=beta&t=HYgWmMxl7Z2YG85LRb6u0JorbBi2W6hiS4mCjWcHtjo"
+      "url": "./brackerts.jfif"
     }
   },
-
+  {
+    "id": "cl3rpww4z6t2b0co59yryrrpy",
+    "company": "KiranaZone",
+    "designation": "Web Developer",
+    "companyLinkedin": "https://www.linkedin.com/company/kiranazone/",
+    "companyUrl": "https://www.kiranazone.com/",
+    "from": "2017-01-08",
+    "to": "2019-12-08",
+    "logo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Solid_white.svg"
+    }
+  },
 
 ]
 
