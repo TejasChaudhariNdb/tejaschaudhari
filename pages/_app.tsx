@@ -8,10 +8,14 @@ import SEO from "@bradgarropy/next-seo"
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script
+    {/*   <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js??id=G-33Z53GSFZ2"`}
-      />
+      /> */}
+
+<Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3195590881637489"
+     crossOrigin="anonymous"></Script>
+
       <Script id="google-analytics-script" strategy="afterInteractive">
         {`  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

@@ -54,6 +54,7 @@ useEffect(() => {
           property="og:description"
           content="Use our Position Size and Risk Calculator to easily calculate the recommended lot size, using live market quotes, account equity, risk percentage and stop ..."
         />
+        <meta property="og:type" content="website" />
       </Head>
      <div className="Container_cal">
      <div>
