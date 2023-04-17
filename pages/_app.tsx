@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       /> */}
 
 <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3195590881637489"
-     crossOrigin="anonymous"></Script>
+     crossOrigin="anonymous"  strategy="afterInteractive"></Script>
 
       <Script id="google-analytics-script" strategy="afterInteractive">
         {`  window.dataLayer = window.dataLayer || [];
