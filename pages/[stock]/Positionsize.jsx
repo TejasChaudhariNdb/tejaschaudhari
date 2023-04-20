@@ -39,11 +39,7 @@ export default function Positionsize() {
         <meta name="google" content="notranslate" key="notranslate" />
         <meta name="author" content="Tejas Chaudhari" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://www.tejaschaudhari.com/stock/Positionsize"
-          key="canonical"
-        />
+
         <meta
           name="description"
           content="Use our Position Size and Risk Calculator to easily calculate the recommended lot size, using live market quotes, account equity, risk percentage and stop ..."
