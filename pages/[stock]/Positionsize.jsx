@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import SEO from "@bradgarropy/next-seo"
 export default function Positionsize() {
   const [accountBalance, setAccountBalance] = useState(15000);
   const [maxPercentageToLose, setMaxPercentageToLose] = useState(3);
@@ -36,6 +37,8 @@ export default function Positionsize() {
         <title>Position Size Calculator Nifty & Bank , Stocks</title>
         <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
         <meta name="google" content="notranslate" key="notranslate" />
+        <meta name="author" content="Tejas Chaudhari" />
+        <link rel="icon" href="/favicon.ico" />
         <link
           rel="canonical"
           href="https://www.tejaschaudhari.com/stock/Positionsize"
@@ -52,6 +55,15 @@ export default function Positionsize() {
           content="Use our Position Size and Risk Calculator to easily calculate the recommended lot size, using live market quotes, account equity, risk percentage and stop ..."
         />
         <meta property="og:type" content="website" />
+
+        <meta name="Keywords" content="position size calculator, lot size calculator, Nifty lot size ,bank nifty lot size,india stock market stop loss , stock size ,forex lot size calculator,Tejas chauhdari , rachanaranade , forex position size calculator, position size calculator mt4, myfxbook position size calculator, forex lot calculator, myfxbook position size, forex lot size calculator mt4, position size calculator stocks, forex risk management calculator, forex calculators, myfxbook calculator" />
+
+        <SEO
+      title="Position Size Calculator Nifty & Bank , Stocks"
+      description="Use our Position Size and Risk Calculator to easily calculate the recommended lot size, using live market quotes, account equity, risk percentage and stop ..."
+      keywords="position size calculator, Nifty lot size ,bank nifty, lot size,india stock market stop loss , stock size , lot size calculator, forex lot size calculator, forex position size calculator, position size calculator mt4, myfxbook position size calculator, forex lot calculator,Tejas chauhdari , rachanaranade ,  myfxbook position size, forex lot size calculator mt4, position size calculator stocks, forex risk management calculator, forex calculators, myfxbook calculator"
+
+    />
       </Head>
       <div className="Container_cal">
         <div>
