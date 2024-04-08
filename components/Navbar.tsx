@@ -51,10 +51,17 @@ export const Navbar: NextPage<INavbarProps> = ({
           <p className="navbar_list_item" onClick={() => onNavItemClick("contact")}>
             Contact
           </p>
-          <Link href="stock/Positionsize" className="navbar_list_item" onClick={() => onNavItemClick("contact")}>
-            Position
-          </Link>
+          <p className="navbar_list_item">
+            <Link href="stock/Positionsize" className="navbar_list_item ">
+              Position
+            </Link>
+          </p>
 
+          <p className="navbar_list_item">
+            <Link href="blog/" className="navbar_list_item ">
+               Blogs
+            </Link>
+          </p>
         </div>
       </nav>
 
