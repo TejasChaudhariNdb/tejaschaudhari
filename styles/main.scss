@@ -124,7 +124,9 @@ align-items: center;
     text-transform: inherit !important;
   }
 }
-
+.basic_container{
+padding: 20px;
+}
 
 @import "./navbar";
 @import "./about";
