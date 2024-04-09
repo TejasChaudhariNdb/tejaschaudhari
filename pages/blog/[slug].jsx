@@ -4,6 +4,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types";
 import SEO from "@bradgarropy/next-seo";
 import  Head  from "next/head";
+import Link from "next/link";
 async function fetchGraphQL(query) {
   return fetch(`https://graphql.contentful.com/content/v1/spaces/e596wccs0y0u`, {
     method: "POST",
@@ -190,6 +191,10 @@ export default function BlogPage() {
               <p className="author">By {blogData.author}</p>
               <div className="content">
                 {documentToReactComponents(blogData.body.json, renderOptions(blogLinksData?.links))}
+                <br />
+                <br />
+                <br />
+                <Link href="/blog"><a> Back To All Blogs</a></Link>
               </div>
             </div>
           ) : (

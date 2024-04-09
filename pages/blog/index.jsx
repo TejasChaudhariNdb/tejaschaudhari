@@ -65,6 +65,7 @@ function Index() {
             {data &&
               data.blogPageCollection.items.map((post, index) => (
                 <Link href={`blog/${post.slug}`} key={index}>
+                  <a>
                   <div className="blog_card">
                     <div className="image_con">
                       <img src={post?.coverImage?.url} alt="" className="blog_image" />
@@ -83,6 +84,7 @@ function Index() {
                       <p className="author">- {post.author}</p>
                     </div>
                   </div>
+                  </a>
                 </Link>
               ))}
           </div>
