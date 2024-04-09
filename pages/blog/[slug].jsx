@@ -170,6 +170,7 @@ export default function BlogPage() {
       {/* <BlogNavbar  /> */}
       <Head>
         <link rel="canonical" href={`https://tejaschaudhari.com/blog/${slug}`} />
+        <link rel="icon" href="../favicon.ico" />
       </Head>
 
       <SEO
