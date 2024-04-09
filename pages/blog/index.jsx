@@ -22,10 +22,15 @@ function Index() {
           items {
             sys {
               id
+              firstPublishedAt
             }
            title
             author
             slug
+            shortinfo
+            coverImage{
+              url
+            }
           }
         }
       }
@@ -39,18 +44,30 @@ function Index() {
   }, []);
 
   return (
-    <div>
-      <h1>Tech Related Blogs </h1>
-      {data &&
-        data.blogPageCollection.items.map((post, index) => (
-          <div key={index}>
-            <Link href={`blog/${post.slug}`}>
-              <h2>{post.title}</h2>
-            </Link>
+    <div className="blog_home">
+      <div className="container">
+        <h1>Tech Related Blogs </h1>
+        <div className="blog_container">
+          {data &&
+            data.blogPageCollection.items.map((post, index) => (
+              <Link href={`blog/${post.slug}`} key={index}>
+                <div className="blog_card">
+                <div className="image_con">
+                <img src={post?.coverImage?.url} alt="" className="blog_image" />
+                  <div className="date">{new Date(post.sys.firstPublishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
 
-            <p>{post.author}</p>
-          </div>
-        ))}
+                </div>
+                 <div className="blog_body">
+                    <h2>{post.title}</h2>
+
+                    <p className="desc">{post?.shortinfo}...</p>
+                    <p className="author">- {post.author}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+        </div>
+      </div>
     </div>
   );
 }
