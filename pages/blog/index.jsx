@@ -55,7 +55,7 @@ function Index() {
       <SEO
         title="Tech Blogs and Startup Funding Blogs | Tejas Chaudhari"
         description="Explore a collection of insightful tech blogs and startup funding articles on Tejas Chaudhari's blog. Stay updated with the latest trends and news in the tech and startup world. OR Dive deep into the latest tech trends & hottest startups impacting the world today. Explore insightful analysis, funding rounds, and expert interviews on Tejas Chaudhari's blog"
-        keywords="tech blogs, netflix tech blog ,georgia tech admissions blog,startup funding, technology, funding support for startups , Tejas Chaudhari ,startups, funding, innovation,tech blog, startup blog, tech news, startup news, funding rounds, tech trends, tech analysis, expert interviews"
+        keywords={["tech blogs, netflix tech blog ,georgia tech admissions blog,startup funding, technology, funding support for startups , Tejas Chaudhari ,startups, funding, innovation,tech blog, startup blog, tech news, startup news, funding rounds, tech trends, tech analysis, expert interviews"]}
       />
 
       <div className="blog_home">
