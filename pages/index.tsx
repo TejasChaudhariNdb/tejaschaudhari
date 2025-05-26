@@ -158,13 +158,25 @@ export default Home;
 export const getStaticProps: GetStaticProps = async () => {
   const jobs: any[] = [
     {
+      id: "cl3rpyik46rq60fpe4t256qddt",
+      company: "SiteLucent",
+      designation: "Full Stack Developer",
+      companyLinkedin: "https://www.linkedin.com/company/sitelucent/",
+      companyUrl: "https://www.sitelucent.com",
+      from: "2024-11-1",
+      to: null,
+      logo: {
+        url: "https://cdn.theorg.com/8d4c7bee-17a0-45e8-b92e-6290f873ba5a_medium.jpg",
+      },
+    },
+    {
       id: "cl3rpyik46rq60fpe4t256qd1t",
       company: "DeskNow",
       designation: "Full Stack Developer",
       companyLinkedin: "https://www.linkedin.com/company/desknow",
       companyUrl: "https://www.desk-now.com/",
       from: "2021-11-1",
-      to: null,
+      to: "2024-10-1",
       logo: {
         url: "https://play-lh.googleusercontent.com/sEFlwIUv8Y6pYNi62Bs13JR6AMSnYAq2RZSrF4YfeEm1YwrMYuc-u6oc_e1XytQTQ7k",
       },
@@ -490,6 +502,17 @@ export const getStaticProps: GetStaticProps = async () => {
       url: "https://www.typescriptlang.org/",
     },
     {
+      uniqueId: 7,
+      skill: "Nextjs",
+      id: "cl3xbn8e8097p0boef39v07r6",
+      proficient: true,
+      fieldType: "Frontend",
+      image: {
+        url: "https://media.graphassets.com/98TpDLZSDWou30OGbTfd",
+      },
+      url: "https://nextjs.org/",
+    },
+    {
       uniqueId: 5,
       skill: "React",
       id: "cl3xbfylx08zs0boea652f4gp",
@@ -501,6 +524,28 @@ export const getStaticProps: GetStaticProps = async () => {
       url: "https://reactjs.org/",
     },
     {
+      uniqueId: 5,
+      skill: "Vue",
+      id: "cl3xbfylxs08zs0boea652f4gp",
+      proficient: true,
+      fieldType: "Frontend",
+      image: {
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/800px-Vue.js_Logo_2.svg.png",
+      },
+      url: "https://vuejs.org/",
+    },
+    {
+      uniqueId: 6,
+      skill: "Angular",
+      id: "cl3xbl0nl094u0bpl6ytxv3l4",
+      proficient: true,
+      fieldType: "Frontend",
+      image: {
+        url: "https://web.dev/static/explore/angular/cover-wide.svg",
+      },
+      url: "https://v17.angular.io/docs",
+    },
+    {
       uniqueId: 6,
       skill: "Redux",
       id: "cl3xbl0nl094u0bpl6ytxv3l4",
@@ -510,17 +555,6 @@ export const getStaticProps: GetStaticProps = async () => {
         url: "https://media.graphassets.com/eBYTbBr6TjiL3QwFGpB8",
       },
       url: "https://redux.js.org/",
-    },
-    {
-      uniqueId: 7,
-      skill: "Nextjs",
-      id: "cl3xbn8e8097p0boef39v07r6",
-      proficient: true,
-      fieldType: "Frontend",
-      image: {
-        url: "https://media.graphassets.com/98TpDLZSDWou30OGbTfd",
-      },
-      url: "https://nextjs.org/",
     },
     {
       uniqueId: 8,
@@ -554,6 +588,17 @@ export const getStaticProps: GetStaticProps = async () => {
         url: "https://media.graphassets.com/RI0hCnqnSZOxqGBYnpyn",
       },
       url: "https://sass-lang.com/",
+    },
+    {
+      uniqueId: 15,
+      skill: "Tailwind CSS",
+      id: "cl3xcgk470a8r0boe3fthq8rj",
+      proficient: true,
+      fieldType: "UILibraries",
+      image: {
+        url: "https://media.graphassets.com/esurqzzPR2SHnffta0KD",
+      },
+      url: "https://tailwindcss.com/",
     },
     {
       uniqueId: 11,
@@ -598,17 +643,6 @@ export const getStaticProps: GetStaticProps = async () => {
         url: "https://media.graphassets.com/kPFKrzQMSnCAhwqquCdA",
       },
       url: "https://react.semantic-ui.com/",
-    },
-    {
-      uniqueId: 15,
-      skill: "Tailwind CSS",
-      id: "cl3xcgk470a8r0boe3fthq8rj",
-      proficient: true,
-      fieldType: "UILibraries",
-      image: {
-        url: "https://media.graphassets.com/esurqzzPR2SHnffta0KD",
-      },
-      url: "https://tailwindcss.com/",
     },
     {
       uniqueId: 16,
