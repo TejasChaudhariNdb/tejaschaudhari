@@ -9,7 +9,7 @@ export const Footer: NextPage = () => {
     <footer className="footer">
       <div className="footer_copyright">
         <p className="footer_copyright_textOne">No &copy; copyright issues.</p>
-        <p className="footer_copyright_textTwo">Feel free to copy.</p>
+        <p className="footer_copyright_textTwo">Feel free to copy. </p>
       </div>
       <div className="footer_socialMedia">
         <p>Connect with me !</p>
