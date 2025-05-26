@@ -8,7 +8,7 @@ export const Footer: NextPage = () => {
   return (
     <footer className="footer">
       <div className="footer_copyright">
-        <p className="footer_copyright_textOne">No &copy; copyright issues.</p>
+        <p className="footer_copyright_textOne">No &copy; copyright issues. </p>
         <p className="footer_copyright_textTwo">Feel free to copy. </p>
       </div>
       <div className="footer_socialMedia">
