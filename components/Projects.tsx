@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { IProjects } from "../typings";
-import Github from "../assets/github.webp";
-import Web from "../assets/www.webp";
+
 import { useEffect, useState } from "react";
 
 interface IProjectsProps {
@@ -92,14 +91,14 @@ export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
               <p className="projects_filter_cardsBox_card_description">{project?.description}</p>
               <div className="projects_filter_cardsBox_card_links">
                 <img
-                  src={Github.src}
+                  src="/assets/github.webp"
                   alt="tejas"
                   // onClick={() => window.open(project?.githubLink, "_blank")}
                   className={`${project?.demoLink && "margin-right"}`}
                 />
                 {project?.demoLink && (
                   <img
-                    src={Web.src}
+                    src="/assets/www.webp"
                     alt="tejas"
                     // onClick={() => window.open(project?.demoLink, "_blank")}
                   />

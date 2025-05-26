@@ -10,7 +10,7 @@ import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
-import ScrollUp from "../assets/scrollup.webp";
+
 
 interface IHomeProps {
   jobs: IJobs[];
@@ -137,7 +137,7 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
         <Footer />
 
         {isVisible && (
-          <img src={ScrollUp.src} alt="tejas" className="scroll-up" onClick={scrollToTop} />
+          <img src="assets/scrollup.webp" alt="tejas" className="scroll-up" onClick={scrollToTop} />
         )}
 
         <ToastContainer

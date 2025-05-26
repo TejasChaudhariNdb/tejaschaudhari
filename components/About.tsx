@@ -1,8 +1,5 @@
 import type { NextPage } from "next";
-import github from "../assets/github.webp";
-import linkedin from "../assets/linkedin.webp";
-import instagram from "../assets/instagram.webp";
-import gmail from "../assets/gmail.webp";
+
 
 export const About: NextPage = () => {
   return (
@@ -16,22 +13,22 @@ export const About: NextPage = () => {
         </p>
         <div className="about_left_socialMedia">
           <img
-            src={github.src}
+            src="/assets/github.webp"
             alt="tejas"
             onClick={() => window.open("https://github.com/TejasChaudhariNdb", "_blank")}
           />
           <img
-            src={linkedin.src}
+            src="/assets/linkedin.webp"
             alt="tejas"
             onClick={() => window.open("https://www.linkedin.com/in/tejaschaudhari038/", "_blank")}
           />
           <img
-            src={instagram.src}
+            src="/assets/instagram.webp"
             alt="tejas"
             onClick={() => window.open("https://www.instagram.com/tejas_s_chaudhari/", "_blank")}
           />
           <img
-            src={gmail.src}
+            src="/assets/gmail.webp"
             alt="tejas"
             onClick={() => window.open("mailto:tejaschaudhari038@gmail.com", "_blank")}
           />

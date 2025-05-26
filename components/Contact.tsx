@@ -3,9 +3,8 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ThreeDots } from "react-loader-spinner";
 import { toast } from "react-toastify";
-import Gmail from "../assets/gmail.webp";
 import { Theme } from "../typings";
-
+  
 interface IFormValues {
   name: string;
   email: string;
@@ -117,7 +116,7 @@ export const Contact: NextPage<IContactProps> = ({ theme }) => {
     <>
       <h1 className="contact_heading">Contact Me</h1>
       <div className="contact_email">
-        <img src={Gmail.src} alt="tejas" /> tejaschaudhari038@gmail.com
+        <img src="/assets/gmail.webp" alt="tejas" /> tejaschaudhari038@gmail.com
       </div>
       {!loading ? (
         <form className="contact_form" autoComplete="off" ref={form}>

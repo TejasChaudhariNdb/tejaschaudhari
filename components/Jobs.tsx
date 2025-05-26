@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { IJobs, Months } from "../typings";
-import linkedin from "../assets/linkedin.webp";
-import www from "../assets/www.webp";
+
 
 interface IJobsProps {
   jobs: IJobs[];
@@ -30,11 +29,11 @@ export const Jobs: NextPage<IJobsProps> = ({ jobs }) => {
             </div>
             <div className="job_companyLinks">
               <img
-                src={linkedin?.src}
+                src="/assets/linkedin.webp"
                 alt="tejas"
                 onClick={() => window.open(job?.companyLinkedin, "_blank")}
               />
-              <img src={www?.src} alt="tejas" onClick={() => window.open(job?.companyUrl, "_blank")} />
+              <img src="assets/www.webp" alt="tejas" onClick={() => window.open(job?.companyUrl, "_blank")} />
             </div>
           </div>
         ))}
